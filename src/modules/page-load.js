@@ -1,33 +1,32 @@
+function createLogo(cls, txt) {
+    const logo = document.createElement('div');
+    logo.classList.add(cls);
+    logo.textContent = txt;
+
+    return logo
+}
+
+function createNavItem(cls, txt) {
+    const navItem = document.createElement('li');
+    navItem.classList.add(cls);
+    navItem.textContent = txt;
+
+    return navItem;
+}
 
 function createNavigation(cls) {
     const navigation = document.createElement('div');
     navigation.classList.add(cls);
 
-
-    //logo
-    const logo = document.createElement('div');
-    logo.classList.add('logo');
-    logo.textContent = 'Khuda Lagche';
-
-
-
-    //nav-items
+    const logo = createLogo('logo', 'Khuda Lagche');
+    
     const navItems = document.createElement('ul');
     navItems.classList.add('nav-items');
 
-
-    //nav-item
-    const home = document.createElement('li');
-    home.classList.add('class', 'nav-item');
-    home.textContent = 'Home';
-
-    const menu = document.createElement('li');
-    menu.classList.add('nav-item');
-    menu.textContent = 'Menu';
-
-    const contact = document.createElement('li');
-    contact.classList.add('nav-item');
-    contact.textContent = 'Contact';
+    //nav-items
+    const home = createNavItem('nav-item', 'Home');
+    const menu = createNavItem('nav-item', 'Menu');
+    const contact = createNavItem('nav-item', 'Contact');
 
     navItems.appendChild(home);
     navItems.appendChild(menu);
@@ -43,7 +42,8 @@ function pageLoad() {
     const content = document.getElementById('content');
 
     const navigation = createNavigation('navigation')
-    content.appendChild(navigation);  
+    content.appendChild(navigation);
+    
 }
 
 export default pageLoad;
