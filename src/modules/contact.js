@@ -7,15 +7,15 @@ function createContact() {
 
     const phn = document.createElement('span');
     phn.classList.add('phn');
-    phn.innerText = '+880239209230';
+    phn.innerText = '📞 +880239209230';
 
     const email = document.createElement('span');
     email.classList.add('email');
-    email.innerText = 'khuda.lagche@gmail.com';
+    email.innerText = '📧 khuda.lagche@gmail.com';
 
     const location = document.createElement('span');
     location.classList.add('location');
-    location.innerText = 'BSMRSTU, Gopalganj, Dhaka, Bangladesh';
+    location.innerText = '🏠 BSMRSTU, Gopalganj, Dhaka, Bangladesh';
 
     contactContainer.appendChild(title);
     contactContainer.appendChild(phn);
