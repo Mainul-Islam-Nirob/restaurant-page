@@ -34,16 +34,28 @@ body {
 }
 
 /* Navivgation Bar */
-.nav {
+.navigation {
+    display: flex;
     height: 10vh;
+    background-color: var(--background-dark);
+    align-items: center;
+    justify-content: space-around;
+
+}
+.logo {
+    color: var(--orange);
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+.nav-items {
     display: flex;
     font-size: 2.5rem;
     font-weight: bold;
     list-style: none;
-    background-color: var(--background-dark);
     color: var(--font-color);
-    align-items: center;
-    justify-content: center;
+   
     gap: 30px;
     padding: 10px;
     /* position: fixed;
@@ -243,5 +255,12 @@ body {
         flex-direction: column;
         padding: 2rem;
         height: 10rem;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .navigation {
+        flex-direction: column;
+        height: auto;
     }
   }
