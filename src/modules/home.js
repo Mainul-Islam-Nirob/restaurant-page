@@ -14,12 +14,11 @@ function createHome () {
     home.appendChild(subTitle);
 
     return home;
-
 }
 
 function loadHome() {
     const main = document.getElementById("main");
-    // main.innerContent = "";
+    main.textContent = "";
     main.appendChild(createHome());
 }
 export default loadHome;
