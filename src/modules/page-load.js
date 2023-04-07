@@ -6,8 +6,9 @@ function createLogo(cls, txt) {
     return logo
 }
 
-function createNavItem(cls, txt) {
+function createNavItem(cls, id, txt) {
     const navItem = document.createElement('li');
+    navItem.setAttribute('id', id)
     navItem.classList.add(cls);
     navItem.textContent = txt;
 
@@ -24,9 +25,9 @@ function createNavigation(cls) {
     navItems.classList.add('nav-items');
 
     //nav-items
-    const home = createNavItem('nav-item', 'Home');
-    const menu = createNavItem('nav-item', 'Menu');
-    const contact = createNavItem('nav-item', 'Contact');
+    const home = createNavItem('nav-item', 'home', 'Home');
+    const menu = createNavItem('nav-item', 'menu', 'Menu');
+    const contact = createNavItem('nav-item', 'contact', 'Contact');
 
     navItems.appendChild(home);
     navItems.appendChild(menu);
@@ -38,13 +39,12 @@ function createNavigation(cls) {
     return navigation
 }
 
-// function createMain(id) {
-//     const main = document.createElement('div');
-//     main.setAttribute('id', id);
-//     main.innerText ="this is main";
+function createMain(id) {
+    const main = document.createElement('div');
+    main.setAttribute('id', id);
 
-//     return main;
-// }
+    return main;
+}
 
 function createFooter(cls) {
     const footer = document.createElement('div');
@@ -68,14 +68,13 @@ function pageLoad() {
     const navigation = createNavigation('navigation')
     content.appendChild(navigation);
 
-    //Main Section
+    // Main Section
     const main = createMain('main');
     content.appendChild(main);
 
     //Footer Section
     const footer = createFooter('footer');
     content.appendChild(footer);
-
 }
 
 export default pageLoad;
