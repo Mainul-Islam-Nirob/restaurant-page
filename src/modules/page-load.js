@@ -38,12 +38,44 @@ function createNavigation(cls) {
     return navigation
 }
 
+// function createMain(id) {
+//     const main = document.createElement('div');
+//     main.setAttribute('id', id);
+//     main.innerText ="this is main";
+
+//     return main;
+// }
+
+function createFooter(cls) {
+    const footer = document.createElement('div');
+    footer.classList.add(cls);
+    footer.innerText = "Copyright 2023 ©"
+
+    const githubLink = document.createElement('a');
+    githubLink.setAttribute('src', 'https://github.com/Mainul-Islam-Nirob');
+    githubLink.innerText = 'Mainul Islam';
+
+    footer.appendChild(githubLink);
+
+    return footer;
+
+}
+
 function pageLoad() {
     const content = document.getElementById('content');
 
+    //Navigation Section
     const navigation = createNavigation('navigation')
     content.appendChild(navigation);
-    
+
+    //Main Section
+    const main = createMain('main');
+    content.appendChild(main);
+
+    //Footer Section
+    const footer = createFooter('footer');
+    content.appendChild(footer);
+
 }
 
 export default pageLoad;
