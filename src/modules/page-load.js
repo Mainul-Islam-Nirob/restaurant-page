@@ -1,5 +1,6 @@
 function createLogo(cls, txt) {
     const logo = document.createElement('div');
+    logo.setAttribute('id', 'logo');
     logo.classList.add(cls);
     logo.textContent = txt;
 
