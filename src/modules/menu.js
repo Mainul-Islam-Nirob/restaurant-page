@@ -58,19 +58,19 @@ function createMenuItems() {
     menuItems.classList.add('menu-items');
     // menuItems.appendChild(createMenuItem());
 
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
+    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Fish and Chips', 'A classic British dish featuring golden-brown beer-battered cod fillets served with crispy French fries, tangy tartar sauce, and a wedge of lemon.'));
 
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
+    menuItems.appendChild(createMenuItem('./images/menu7.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
 
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
+    menuItems.appendChild(createMenuItem('./images/menu6.png', 'Lobster Roll', 'A New England classic featuring tender chunks of succulent lobster meat tossed with creamy mayonnaise and celery, served in a toasted buttered roll.'));
 
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
+    menuItems.appendChild(createMenuItem('./images/menu5.png', 'Vegetable Stir-Fry', 'A colorful medley of fresh vegetables stir-fried to perfection and served over a bed of fluffy rice, with a savory soy-ginger sauce on top.'));
 
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
+    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Fish and Chips', 'A classic British dish featuring golden-brown beer-battered cod fillets served with crispy French fries, tangy tartar sauce, and a wedge of lemon.'));
 
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
-
-    menuItems.appendChild(createMenuItem('./images/menu8.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
+    menuItems.appendChild(createMenuItem('./images/menu6.png', 'Lobster Roll', 'A New England classic featuring tender chunks of succulent lobster meat tossed with creamy mayonnaise and celery, served in a toasted buttered roll.'));
+    
+    menuItems.appendChild(createMenuItem('./images/menu7.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
 
 
 
