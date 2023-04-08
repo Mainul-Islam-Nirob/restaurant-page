@@ -52,7 +52,7 @@ function createFooter(cls) {
     footer.innerText = "Copyright 2023 ©"
 
     const githubLink = document.createElement('a');
-    githubLink.setAttribute('src', 'https://github.com/Mainul-Islam-Nirob');
+    githubLink.setAttribute('href', 'https://github.com/Mainul-Islam-Nirob');
     githubLink.innerText = 'Mainul Islam';
 
     footer.appendChild(githubLink);
