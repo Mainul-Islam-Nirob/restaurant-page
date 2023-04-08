@@ -1,3 +1,6 @@
+import activeNav from "./activeNav";
+import deActiveNav from "./deActiveNav";
+
 function createMenuHeading(params) {
     const menuHeading = document.createElement('div');
     menuHeading.classList.add('menu-heading');
@@ -69,12 +72,8 @@ function createMenuItems() {
     menuItems.appendChild(createMenuItem('./images/menu8.png', 'Fish and Chips', 'A classic British dish featuring golden-brown beer-battered cod fillets served with crispy French fries, tangy tartar sauce, and a wedge of lemon.'));
 
     menuItems.appendChild(createMenuItem('./images/menu6.png', 'Lobster Roll', 'A New England classic featuring tender chunks of succulent lobster meat tossed with creamy mayonnaise and celery, served in a toasted buttered roll.'));
-    
+
     menuItems.appendChild(createMenuItem('./images/menu7.png', 'Margherita Pizza', 'Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.'));
-
-
-
-
     return menuItems;
 }
 
@@ -92,8 +91,10 @@ function createMenu() {
 function loadMenu() {
     const main = document.getElementById("main");
     main.textContent = "";
-    console.log(createMenu(), "****");
     main.appendChild(createMenu()); 
+    deActiveNav();  //remove active class from all nav item
+    activeNav('menu'); // add for menu
+
 }
 
 export default loadMenu;

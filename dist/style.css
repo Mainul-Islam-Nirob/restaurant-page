@@ -74,6 +74,11 @@ body {
     cursor: pointer;
 }
 
+.active {
+    border-bottom: 3px solid var(--orange);
+    color: var(--orange);
+}
+
 /* Home Page */
 .home {
   height: 80vh;

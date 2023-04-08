@@ -1,3 +1,6 @@
+import activeNav from "./activeNav";
+import deActiveNav from "./deActiveNav";
+
 function createHome () {
     const home = document.createElement('div');
     home.classList.add('home');
@@ -20,5 +23,7 @@ function loadHome() {
     const main = document.getElementById("main");
     main.textContent = "";
     main.appendChild(createHome());
+    deActiveNav();  //remove active class from all nav item
+    activeNav('home'); //add for home
 }
 export default loadHome;

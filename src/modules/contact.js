@@ -1,3 +1,6 @@
+import activeNav from "./activeNav";
+import deActiveNav from "./deActiveNav";
+
 function createContact() {
     const contactContainer = document.createElement('div');
     contactContainer.classList.add('contact-container');
@@ -34,6 +37,8 @@ function loadContact() {
     const main = document.getElementById("main");
     main.textContent = "";
     main.appendChild(contact);
+    deActiveNav(); //remove active class from all nav item
+    activeNav('contact'); // add active class only for contact
 }
 
 export default loadContact;
